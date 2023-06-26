@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     let hrs=new Date();
+    //    console.log(hrs.toLocaleDateString())
+
+        //hrs
+        // let hrs=new Date();
+        // hrs.setHours(17);
+        // console.log (hrs.toLocaleString());
+
+        //     let a=new Date();
+        //     let s= a.getDate();
+        //     let b=new Date();
+        // let r= b.getMonth()+1;
+        //     let c=new Date();
+        //     let o=c.getFullYear();
+        //     console.log(s+'-',r+'-',o);
+
+
+    let ssa=parseInt(prompt('enter the year'))-1;
+        let month=new Date();
+      <!-- month.setFullYear(ssa) -->
+
+        month.setMonth(ssa+1);
+        month.setDate(0);
+       let a= month.getDate(); 
+        <!-- console.log(a); -->
+		switch(ssa){
+		case 0:
+		console.log('jan',a);
+		break;
+		
+		case 1:
+		console.log('feb',a);
+		break;
+		
+		case 2:
+		console.log('mar',a);
+		break;
+		
+		case 3:
+		console.log('apr',a);
+		break;
+		
+		case 4:
+		console.log('may',a);
+		break;
+		case 5:
+		console.log('jun',a);
+		break;
+		
+		case 6:
+		console.log('jly',a);
+		break;
+		
+		case 7:
+		console.log('aug',a);
+		break;
+		
+		case 8:
+		console.log('sep',a);
+		break;
+		
+		case 9:
+		console.log('oct',a);
+		break;
+		case 10:
+		console.log('nov',a);
+		break;
+		case 11:
+		console.log('dec',a);
+		break;
+		default :
+		console.log('error');
+		break;
+		}        
+    
+    
+    //day
+        //  let day=new Date('19 04 2023');
+        //     day.setDate(8)
+        // console.log(day);
+</script>
+</body>
+</html>
